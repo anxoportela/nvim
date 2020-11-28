@@ -1,0 +1,3 @@
+# nvim
+
+Configuraciones nvim
