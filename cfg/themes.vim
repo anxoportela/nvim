@@ -34,7 +34,7 @@ let g:webdevicons_enable_startify = 1
 let g:startify_bookmarks = [
             \ { 'c': '~/.config/i3/config' },
             \ { 'i': '~/.config/nvim/init.vim' },
-            \ { 'z': '~/.zshrc' },
+            \ { 'z': '~/.config/zsh/.zshrc' },
             \ ]
 let g:startify_enable_special = 0
 autocmd BufEnter * if line2byte('.') == -1 && len(tabpagebuflist()) == 1 | Startify | endif

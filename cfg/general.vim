@@ -30,7 +30,6 @@ set updatetime=300
 set shortmess+=c
 set signcolumn=yes
 set splitbelow splitright
-set nowrap
 set ruler
 set cmdheight=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o

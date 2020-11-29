@@ -28,6 +28,7 @@ Plug 'heavenshell/vim-jsdoc', {
   \ 'do': 'make install'
 \}
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'voldikss/fzf-floaterm'
 Plug 'voldikss/vim-floaterm'
 Plug 'junegunn/goyo.vim'
 Plug 'ryanoasis/vim-devicons'

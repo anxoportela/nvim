@@ -6,8 +6,6 @@ nnoremap <M-TAB> :bd<CR>
 vnoremap < <gv
 vnoremap > >gv
 nnoremap <C-n> :TagbarToggle<CR>
-nmap <C-p> :Files<CR>
-nmap <C-o> :GFiles<CR>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -24,4 +22,11 @@ nnoremap <leader>sc :TagbarClose<CR>:SClose<CR>
 nnoremap <leader>sl :SLoad<CR>
 nnoremap <leader>sd :SDelete<CR>
 nmap <leader>r :RnvimrToggle<CR>
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <Leader>b :Buffers<CR>
+nnoremap <silent> <M-f> :Rg<CR>
+nnoremap <silent> <Leader>/ :BLines<CR>
+nnoremap <silent> <Leader>' :Marks<CR>
+nnoremap <silent> <Leader>g :Commits<CR>
+nnoremap <silent> <Leader>H :Helptags<CR>
 nnoremap <leader>lt :Floaterms<CR>
