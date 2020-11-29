@@ -5,7 +5,7 @@ nnoremap <TAB> :bnext<CR>
 nnoremap <M-TAB> :bd<CR>
 vnoremap < <gv
 vnoremap > >gv
-nnoremap <C-n> :TagbarToggle<CR>
+nnoremap <C-t> :TagbarToggle<CR>
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
