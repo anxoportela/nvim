@@ -1,5 +1,6 @@
 let mapleader=","
 au! BufWritePost $MYVIMRC source %
+autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 au BufNewFile * startinsert
 filetype plugin on
 syntax enable
@@ -34,6 +35,8 @@ set ruler
 set cmdheight=2
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 cmap w!! w !sudo tee %
+autocmd VimLeave *.tex !texclear %
+autocmd BufWritePre * %s/\s\+$//e
 
 if (empty($TMUX))
   if (has("nvim"))
@@ -43,3 +46,17 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+let g:tex_flavor='latex'
+autocmd BufRead,BufNewFile *.sty setl filetype=tex
+autocmd FileType tex setl sw=2
+autocmd FileType tex setl tabstop=2
+autocmd FileType tex setl softtabstop=2
+autocmd FileType tex setl softtabstop=2
+autocmd FileType tex let g:ycm_auto_trigger=0
+let g:tex_conceal="abdgm"
+let g:tex_conceal="abdgm"
+let g:tex_fold_enabled=1
+autocmd FileType tex map <leader>w :w !detex \| wc -w<CR>
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_strikethrough = 1

@@ -22,8 +22,8 @@ nnoremap <leader>sc :TagbarClose<CR>:SClose<CR>
 nnoremap <leader>sl :SLoad<CR>
 nnoremap <leader>sd :SDelete<CR>
 nmap <leader>r :RnvimrToggle<CR>
-nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <M-f> :GFiles<CR>
+nnoremap <silent> <leader>f :Files<CR>
+nnoremap <silent> <leader>F :GFiles<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <C-g> :Rg<CR>
 nnoremap <silent> <Leader>/ :BLines<CR>
@@ -34,3 +34,8 @@ nnoremap <silent> <Leader>hh :History<CR>
 nnoremap <silent> <Leader>h: :History:<CR>
 nnoremap <silent> <Leader>h/ :History/<CR>
 nnoremap <leader>lt :Floaterms<CR>
+map <leader>c :w! \| !compiler <c-r>%<CR>
+map <leader>p :!opout <c-r>%<CR><CR>
+inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+vnoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+map <leader><leader> <Esc>/<++><Enter>"_c4l

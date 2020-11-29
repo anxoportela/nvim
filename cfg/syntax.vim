@@ -29,6 +29,8 @@ let g:coc_global_extensions = [
   \ 'coc-highlight', 
   \ 'coc-html', 
   \ 'coc-vimlsp', 
+  \ 'coc-vimtex', 
+  \ 'coc-markdownlint', 
   \ ]
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -46,8 +48,8 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <F2> <Plug>(coc-rename)
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <C-f>  <Plug>(coc-format-selected)
+nmap <C-f>  <Plug>(coc-format-selected)
 augroup mygroup
   autocmd!
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
