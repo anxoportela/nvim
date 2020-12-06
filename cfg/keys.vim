@@ -22,8 +22,8 @@ nnoremap <leader>sc :TagbarClose<CR>:SClose<CR>
 nnoremap <leader>sl :SLoad<CR>
 nnoremap <leader>sd :SDelete<CR>
 nmap <leader>r :RnvimrToggle<CR>
-nnoremap <silent> <leader>f :Files<CR>
-nnoremap <silent> <leader>F :GFiles<CR>
+map <expr> <leader>f fugitive#head() != '' ? ':GFiles --cached --others --exclude-standard<CR>' : ':Files<CR>'
+"map <expr> <leader>F fugitive#head() != '' ? ':GFiles?<CR>' : ''
 nnoremap <silent> <Leader>b :Buffers<CR>
 nnoremap <silent> <C-g> :Rg<CR>
 nnoremap <silent> <Leader>/ :BLines<CR>
