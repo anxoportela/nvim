@@ -37,7 +37,7 @@ let g:startify_bookmarks = [
             \ { 'z': '~/.config/zsh/.zshrc' },
             \ ]
 let g:startify_enable_special = 0
-autocmd BufEnter * if line2byte('.') == -1 && len(tabpagebuflist()) == 1 | Startify | endif
+"autocmd BufEnter * if line2byte('.') == -1 && len(tabpagebuflist()) == 1 | Startify | endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#left_sep = ''

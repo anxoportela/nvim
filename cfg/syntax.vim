@@ -29,8 +29,8 @@ let g:coc_global_extensions = [
   \ 'coc-highlight',
   \ 'coc-html',
   \ 'coc-vimlsp',
-  \ 'ng-bootstrap-snippets',
-  \ 'Angular-BeastCode',
+  "\ 'ng-bootstrap-snippets',
+  "\ 'Angular-BeastCode',
   \ 'coc-vimtex',
   \ 'coc-markdownlint',
   \ ]
