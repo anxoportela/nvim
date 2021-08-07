@@ -25,6 +25,11 @@ let g:startify_lists = [
           \ { 'type': 'bookmarks', 'header': ['   Bookmarks']                    },
           \ { 'type': 'commands',  'header': ['   Commands']       },
           \ ]
+let g:startify_enable_special = 0
+let g:startify_files_number = 8
+let g:startify_relative_path = 1
+let g:startify_change_to_dir = 1
+let g:startify_update_oldfiles = 1
 let g:startify_session_autoload = 1
 let g:startify_session_delete_buffers = 1
 let g:startify_change_to_vcs_root = 1
@@ -48,3 +53,14 @@ let g:airline_powerline_fonts = 0
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_theme = 'onedark'
+let g:ascii = [
+ \' ____     ___   ___   __ __  ____  ___ ___ ',
+ \'|    \   /  _] /   \ |  |  ||    ||   |   |',
+ \'|  _  | /  [_ |     ||  |  | |  | | _   _ |',
+ \'|  |  ||    _]|  O  ||  |  | |  | |  \_/  |',
+ \'|  |  ||   [_ |     ||  :  | |  | |   |   |',
+ \'|  |  ||     ||     | \   /  |  | |   |   |',
+ \'|__|__||_____| \___/   \_/  |____||___|___|',
+ \''
+ \]
+let g:startify_custom_header = startify#pad(g:ascii)
